@@ -196,7 +196,7 @@ The Sequence Diagram below illustrates the interactions within the `Logic` compo
 </div>
 
 Here are the other classes in `Logic` (omitted from the class diagram above) that are used for parsing a user command:
-<img src="images/ParserClasses.png" width="600"/>
+<img src="images/ParserClasses.png" width="550"/>
 
 How the parsing works:
 * When called upon to parse a user command, the `TeachWhatParser` class creates an `XYZCommandParser` (`XYZ` is a placeholder for the specific command name e.g., `DeleteStudentCommandParser`) which uses the other classes shown above to parse the user command and create a `XYZCommand` object (e.g., `DeleteStudentCommand`) which the `TeachWhatParser` returns back as a `Command` object.
